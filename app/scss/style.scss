@@ -68,18 +68,31 @@ body {
         margin: 20px auto;
         width: 200px;
     }
+    &__quizResult {
+        display: none;
+        font-size: 24px;
+        h3 {
+            font-size: inherit;
+        }
+        h3 span {
+            font-weight: normal;
+            font-style: italic;
+        }
+    }
     &__questions {
         display: none;
         animation: ani 2s forwards
+    }
+    &__question-counter {
+        font-size: 14px;
+        font-style: italic;
+        margin-left: 40px;
     }
     &__question {
         display: none;
         list-style-type: none;
         margin-left: 40px;
-    }
-    &__question-counter {
-        font-size: 14px;
-        font-style: italic;
+        animation: ani 2s forwards;
     }
     &__question-title {
         font-size: 18px;
@@ -87,6 +100,50 @@ body {
         line-height: 1.2;
         font-family: "Segoe UI",Arial,sans-serif;
         margin: 10px 0;
+    }
+    &__answers {
+        padding-left: 40px!important;
+        margin-bottom: 10px!important;
+        &-item input, label {
+            cursor: pointer;
+        }
+    }
+    &__buttons {
+        display: none;
+        text-align: center;
+        margin-top: 20px;
+    }
+    &__btn-answers {
+        border: none;
+        display: inline-block;
+        padding: 8px 16px;
+        vertical-align: middle;
+        overflow: hidden;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+        white-space: nowrap;
+        color: #fff!important;
+        background-color: #2196F3!important;
+        margin-bottom: 0.5rem;
+        font-size: 18px!important;
+    }
+    &__btn-again {
+        margin-bottom: 0.5rem;
+        color: #fff!important;
+        background-color: #2196F3!important;
+        font-size: 18px!important;
+        border: none;
+        display: inline-block;
+        padding: 8px 16px;
+        vertical-align: middle;
+        overflow: hidden;
+        text-decoration: none;
+        color: inherit;
+        background-color: inherit;
+        text-align: center;
+        cursor: pointer;
+        white-space: nowrap;
     }
 }
 
@@ -96,4 +153,21 @@ body {
 .next {
     display: none;
     animation: ani 2s forwards
+}
+.responce {
+    display: none;
+    font-weight: bold;
+    font-size: 18px!important;
+    margin: 10px 20px 20px;
+    line-height: 1.5;
+    font-family: Verdana,sans-serif;
+    margin-left: 50px;
+}
+.correct {
+    color: #6C9F2E;
+    display: block;
+}
+.incorrect {
+    color: #B5121B;
+    display: block;
 }

@@ -24,53 +24,153 @@
          </div>
       </div>
       <p class="wrapper__text">Данный тест поможет проверить как Вы усвоили JavaScript.</p>
+      
       <button class="wrapper__btn">Пройти тест!</button>
 
+      <div class="wrapper__quizResult">
+         <h3 class="wrapper__quizScore">Ваш результат <span></span></h3>
+         <h3 class="wrapper__quizLevel"><strong>Рейтинг: </strong><span></span></h3>
+      </div>
+
       <ol class="wrapper__questions">
-         <li class="wrapper__question question0">
-            <div class="wrapper__question-counter">
-               Вопрос
-               <span class="current"></span>
-               из
-               <span class="total"></span>
-            </div>
-            <h3 class="wrapper__question-title">1. Внешний JavaScript файл должен находиться в теге script ?</h3>
+
+         <div class="wrapper__question-counter">
+            Вопрос
+            <span class="current"></span>
+            из
+            <span class="total"></span>
+         </div>
+
+         <li class="wrapper__question question1">
+            <h3 class="wrapper__question-title">1. Внешний JavaScript файл должен находиться в теге &lt;script>?</h3>
             <ul class="wrapper__answers">
                <li class="wrapper__answers-item">
-                  <input id="question01" type="radio" name="question0">
-                  <label for="question01">Нет</label>
+                  <input id="question11" type="radio" name="question1">
+                  <label for="question11">Нет</label>
                </li>
                <li class="wrapper__answers-item">
-                  <input id="question02" type="radio" name="question0">
-                  <label for="question02">Да</label>
+                  <input id="question12" type="radio" name="question1">
+                  <label for="question12">Да</label>
                </li>
             </ul>
-            <!-- <button class="wrapper__btn">Дальше >></button> -->
-            <!-- <hr> -->
+            <p class="responce"></p>
          </li>
 
-         <li class="wrapper__question question0">
-            <div class="wrapper__question-counter">
-               Вопрос
-               <span class="current"></span>
-               из
-               <span class="total"></span>
-            </div>
-            <h3 class="wrapper__question-title">1. Внешний JavaScript файл должен находиться в теге script ?</h3>
+         <li class="wrapper__question question2">
+            <h3 class="wrapper__question-title">2. Какой правильный способ комментариев в JavaScript?</h3>
             <ul class="wrapper__answers">
                <li class="wrapper__answers-item">
-                  <input id="question01" type="radio" name="question0">
-                  <label for="question01">Нет</label>
+                  <input id="question21" type="radio" name="question2">
+                  <label for="question21">&lt;!-- Это комментарий. ></label>
                </li>
                <li class="wrapper__answers-item">
-                  <input id="question02" type="radio" name="question0">
-                  <label for="question02">Да</label>
+                  <input id="question22" type="radio" name="question2">
+                  <label for="question22">// Это комментарий.</label>
+               </li>
+               <li class="wrapper__answers-item">
+                  <input id="question23" type="radio" name="question2">
+                  <label for="question23"><Это комментарий.></label>
                </li>
             </ul>
-            <!-- <button class="wrapper__btn next">Дальше >></button> -->
-            <!-- <hr> -->
+            <p class="responce"></p>
          </li>
+
+         <li class="wrapper__question question3">
+            <h3 class="wrapper__question-title">3. Как округляется число 3.14 до ближайшего целого числа?</h3>
+            <ul class="wrapper__answers">
+               <li class="wrapper__answers-item">
+                  <input id="question31" type="radio" name="question3">
+                  <label for="question31">Math.round(3.14)</label>
+               </li>
+               <li class="wrapper__answers-item">
+                  <input id="question32" type="radio" name="question3">
+                  <label for="question32">round(3.14)</label>
+               </li>
+               <li class="wrapper__answers-item">
+                  <input id="question33" type="radio" name="question3">
+                  <label for="question33">rnd(3.14)</label>
+               </li>
+               <li class="wrapper__answers-item">
+                  <input id="question34" type="radio" name="question3">
+                  <label for="question34">Math.rnd(3.14)</label>
+               </li>
+            </ul>
+            <p class="responce"></p>
+         </li>
+
+         <!-- <li class="wrapper__question question4">
+            <h3 class="wrapper__question-title">4. Какой используется оператор для присвоения значения переменной?</h3>
+            <ul class="wrapper__answers">
+               <li class="wrapper__answers-item">
+                  <input id="question41" type="radio" name="question4">
+                  <label for="question41">X</label>
+               </li>
+               <li class="wrapper__answers-item">
+                  <input id="question42" type="radio" name="question4">
+                  <label for="question42">*</label>
+               </li>
+               <li class="wrapper__answers-item">
+                  <input id="question43" type="radio" name="question4">
+                  <label for="question43">-</label>
+               </li>
+               <li class="wrapper__answers-item">
+                  <input id="question44" type="radio" name="question4">
+                  <label for="question44">=</label>
+               </li>
+            </ul>
+         </li>
+
+         <li class="wrapper__question question5">
+            <h3 class="wrapper__question-title">5. Как найти наибольшее из двух чисел?</h3>
+            <ul class="wrapper__answers">
+               <li class="wrapper__answers-item">
+                  <input id="question51" type="radio" name="question5">
+                  <label for="question51">Math.max(x, y)</label>
+               </li>
+               <li class="wrapper__answers-item">
+                  <input id="question52" type="radio" name="question5">
+                  <label for="question52">ceil(x, y)</label>
+               </li>
+               <li class="wrapper__answers-item">
+                  <input id="question53" type="radio" name="question5">
+                  <label for="question53">Math.ceil(x, y)</label>
+               </li>
+               <li class="wrapper__answers-item">
+                  <input id="question54" type="radio" name="question5">
+                  <label for="question54">top(x, y)</label>
+               </li>
+            </ul>
+         </li>
+
+         <li class="wrapper__question question6">
+            <h3 class="wrapper__question-title">6. Как правильно вставить внешний скрипт?</h3>
+            <ul class="wrapper__answers">
+               <li class="wrapper__answers-item">
+                  <input id="question61" type="radio" name="question6">
+                  <label for="question61"> &lt;script href='sample1.js'> </label>
+               </li>
+               <li class="wrapper__answers-item">
+                  <input id="question62" type="radio" name="question6">
+                  <label for="question62"> &lt;script src='sample1.js'></label>
+               </li>
+               <li class="wrapper__answers-item">
+                  <input id="question63" type="radio" name="question6">
+                  <label for="question63"> &lt;script name='sample1.js'></label>
+               </li>
+               <li class="wrapper__answers-item">
+                  <input id="question64" type="radio" name="question6">
+                  <label for="question64"> &lt;#include 'sample1.js'> </label>
+               </li>
+            </ul>
+         </li> -->
+
       </ol>
+
+      <div class="wrapper__buttons">
+         <button class="wrapper__btn-answers">Посмотреть свои ответы</button>
+         <button class="wrapper__btn-again">Попробовать снова</button>
+      </div>
+
       <button class="wrapper__btn next">Дальше >></button>
       <hr>
    </div>
