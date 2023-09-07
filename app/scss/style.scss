@@ -145,6 +145,36 @@ body {
         cursor: pointer;
         white-space: nowrap;
     }
+    &__btn-open {
+        border: none;
+        display: none;
+        padding: 8px 16px;
+        vertical-align: middle;
+        overflow: hidden;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+        white-space: nowrap;
+        color: #fff!important;
+        background-color: #2196F3!important;
+        margin-bottom: 0.5rem;
+        font-size: 18px!important;
+    }
+    &__btn-close {
+        border: none;
+        display: none;
+        padding: 8px 16px;
+        vertical-align: middle;
+        overflow: hidden;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+        white-space: nowrap;
+        color: #fff!important;
+        background-color: #2196F3!important;
+        margin-bottom: 0.5rem;
+        font-size: 18px!important;
+    }
 }
 
 .current, .total {
